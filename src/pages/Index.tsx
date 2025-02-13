@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -74,8 +75,16 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-50 py-8">
         <div className="container max-w-6xl mx-auto px-4">
-          <div className="text-center text-gray-600 text-sm">
-            © {new Date().getFullYear()} Oomiyasa LLC. All rights reserved.
+          <div className="flex flex-col items-center space-y-4">
+            <Link 
+              to="/about" 
+              className="text-gray-600 hover:text-book-red transition-colors"
+            >
+              About the Author
+            </Link>
+            <div className="text-center text-gray-600 text-sm">
+              © {new Date().getFullYear()} Oomiyasa LLC. All rights reserved.
+            </div>
           </div>
         </div>
       </footer>
