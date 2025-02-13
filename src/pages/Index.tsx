@@ -16,7 +16,7 @@ const Index = () => {
               The Good No
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              The problem with being known as a "go-to" person? Everyone goes to you.
+              Master the art of setting boundaries and protect your most valuable asset - your time.
             </p>
             <Button 
               className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
@@ -41,7 +41,7 @@ const Index = () => {
         <div className="container max-w-4xl mx-auto px-4">
           <div className="space-y-8 animate-fade-up">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              Are you the person everyone counts on?
+              The problem with being known as a "go-to" person? Everyone goes to you.
             </h2>
             <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
               <p>
