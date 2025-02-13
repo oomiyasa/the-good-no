@@ -16,7 +16,7 @@ const Index = () => {
               The Good No
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Master the art of setting boundaries and protect your most valuable asset - your time.
+              The problem with being known as a "go-to" person? Everyone goes to you.
             </p>
             <Button 
               className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
