@@ -23,7 +23,7 @@ const Index = () => {
               className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
               onClick={() => window.open("#", "_blank")}
             >
-              Pre-order Now
+              Order Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
