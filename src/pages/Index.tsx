@@ -82,6 +82,12 @@ const Index = () => {
             >
               About the Author
             </Link>
+            <a 
+              href="mailto:contact@oomiyasa.com"
+              className="text-gray-600 hover:text-book-red transition-colors"
+            >
+              contact@oomiyasa.com
+            </a>
             <div className="text-center text-gray-600 text-sm">
               © {new Date().getFullYear()} Oomiyasa LLC. All rights reserved.
             </div>
