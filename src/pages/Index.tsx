@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -52,7 +53,7 @@ const Index = () => {
                 hard-earned reputation, the cycle gets even more challenging to break.
               </p>
               <p className="text-xl font-medium text-book-red">
-                The Good No is a practical guide to setting boundaries in a world that doesn't seem 
+                <span className="italic">The Good No</span> is a practical guide to setting boundaries in a world that doesn't seem 
                 to understand the concept.
               </p>
               <p>
@@ -62,7 +63,7 @@ const Index = () => {
               </p>
               <p>
                 Perfect for people who are stretched too thin but still weirdly attracted to the 
-                idea of building a "do or die" reputation. The Good No helps you master the art of 
+                idea of building a "do or die" reputation. <span className="italic">The Good No</span> helps you master the art of 
                 prioritizing the right stuff, at the right time, for the right people. Especially for yourself.
               </p>
             </div>
