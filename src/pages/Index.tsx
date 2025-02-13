@@ -29,7 +29,7 @@ const Index = () => {
           </div>
           <div className="animate-fade-in">
             <img
-              src="/lovable-uploads/a00337ea-4673-4ab6-bc34-41f41abcb376.png"
+              src="/lovable-uploads/ad1ae17a-d49c-4ecc-ba3e-fba0fc677922.png"
               alt="The Good No Book Cover"
               className="w-full max-w-md mx-auto shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300"
             />
