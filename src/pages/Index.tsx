@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -45,7 +44,6 @@ const Index = () => {
             </h2>
             <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
               <p>
-                The problem with being known as a "go-to" person? Everyone goes to you.
                 You're the person people count on to deliver, solve, and manage the important stuff. 
                 But when the requests never stop, even the most capable and committed person hits a breaking point.
               </p>
