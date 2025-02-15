@@ -28,11 +28,11 @@ const About = () => {
           </p>
           
           <p className="text-gray-700 mb-6">
-            He is an above-average cook, a slow cyclist, a loud talker, an inveterate putterer, 
-            a former smoker, a light drinker, a wannabe handyperson, and a boring dresser. 
-            Most importantly, he is a proud father, an adoring spouse, an attentive son, 
-            a supportive sibling, a fierce friend, a mindful neighbor and more often than not, 
-            a law-abiding citizen.
+            He is an above-average cook, a slow cyclist, a loud talker, a live music lover, 
+            an inveterate putterer, a former smoker, a light drinker, a wannabe handyperson, 
+            and a boring dresser. Most importantly, he is a proud father, an adoring spouse, 
+            an attentive son, a supportive sibling, a fierce friend, a mindful neighbor and 
+            more often than not, a law-abiding citizen.
           </p>
           
           <p className="text-gray-700">
