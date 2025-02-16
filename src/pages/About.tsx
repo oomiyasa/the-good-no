@@ -22,17 +22,18 @@ const About = () => {
           </p>
           
           <p className="text-gray-700 mb-6">
-            At one time or another he was a data entry hack, a non-profit program coordinator, 
-            a writer and director of training films, a restaurant laborer, a pizza delivery driver, 
-            a charter sailboat mate, and a golf caddie.
+            At one time or another he was a data entry doer, a non-profit nobody, a whimsical writer of training films, 
+            a bad tempered bartender, a delivery driver, a sun-kissed sailboat mate, and a good-for-nothing golf caddie.
           </p>
           
           <p className="text-gray-700 mb-6">
-            He is an above-average cook, a slow cyclist, a loud talker, a live music lover, 
-            an inveterate putterer, a former smoker, a light drinker, a wannabe handyperson, 
-            and a boring dresser. Most importantly, he is a proud father, an adoring spouse, 
-            an attentive son, a supportive sibling, a fierce friend, a mindful neighbor and 
-            more often than not, a law-abiding citizen.
+            He is a capable cook, a slow cyclist, an insular introvert, a pernicious putterer, a desultory drinker, 
+            a hellacious handyman, an alliteration addict, and a drab dresser.
+          </p>
+          
+          <p className="text-gray-700 mb-6">
+            Most importantly, he is a fond father, a steadfast spouse, a supportive son, a stalwart sibling, 
+            a fierce friend, a non-judgmental neighbor and more often than not, a law-abiding local.
           </p>
           
           <p className="text-gray-700">
