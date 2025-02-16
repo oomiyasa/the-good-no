@@ -10,8 +10,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: '/', // Add explicit base URL
   build: {
-    outDir: './', // Changed from 'docs' to root directory
+    outDir: './', // Build to root directory
+    emptyOutDir: false, // Don't delete existing files in root
   },
   plugins: [
     react(),
