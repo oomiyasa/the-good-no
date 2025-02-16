@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react({
       tsDecorators: true,
-      jsxImportSource: "@emotion/react"
+      plugins: [['@swc/plugin-emotion', {}]]
     }),
     mode === 'development' &&
     componentTagger(),
@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    },
+    }
   },
   build: {
     sourcemap: true,
