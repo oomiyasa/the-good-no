@@ -24,15 +24,13 @@ export default defineConfig(({ mode }) => ({
     ]
   },
   plugins: [
-    react(),
+    react({
+      tsDecorators: true,
+      jsxImportSource: "@emotion/react"
+    }),
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
   build: {
     sourcemap: true,
     rollupOptions: {
@@ -45,5 +43,9 @@ export default defineConfig(({ mode }) => ({
     esbuildOptions: {
       target: 'esnext'
     }
+  },
+  esbuild: {
+    loader: 'tsx',
+    include: /\.[jt]sx?$/,
   }
 }));
