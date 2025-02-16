@@ -12,16 +12,8 @@ export default defineConfig(({ mode }) => ({
       strict: false // Disable strict file serving
     },
     headers: {
-      // Ensure proper MIME types for JavaScript modules
-      "*.js": {
-        "Content-Type": "application/javascript"
-      },
-      "*.ts": {
-        "Content-Type": "application/javascript"
-      },
-      "*.tsx": {
-        "Content-Type": "application/javascript"
-      }
+      'Cache-Control': 'no-store',
+      'Content-Type': 'application/javascript; charset=utf-8'
     }
   },
   plugins: [
