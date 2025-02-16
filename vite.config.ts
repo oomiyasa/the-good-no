@@ -15,7 +15,6 @@ export default defineConfig(({ mode }) => ({
     },
     middlewares: [
       ((req: IncomingMessage, res: ServerResponse, next: Connect.NextFunction) => {
-        // Set correct MIME type for JavaScript modules
         if (req.url?.endsWith('.js') || req.url?.endsWith('.ts') || req.url?.endsWith('.tsx')) {
           res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
         }
@@ -23,11 +22,7 @@ export default defineConfig(({ mode }) => ({
       }) as Connect.NextHandleFunction
     ]
   },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -39,11 +34,6 @@ export default defineConfig(({ mode }) => ({
       output: {
         format: 'es'
       }
-    }
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      target: 'esnext'
     }
   }
 }));
