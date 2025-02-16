@@ -5,57 +5,56 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-texture">
       {/* Hero Section */}
-      <section className="container max-w-6xl mx-auto pt-20 pb-24 px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <div className="inline-block text-book-red text-sm">
+      <section className="container max-w-6xl mx-auto pt-12 pb-24 px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 animate-fade-up">
+            <div className="inline-block bg-book-red/10 text-book-red font-medium px-4 py-2 rounded-full text-sm">
               New Release
             </div>
-            <h1 className="text-5xl font-bold text-book-red">
+            <h1 className="text-4xl md:text-6xl font-bold text-book-red">
               The Good No
             </h1>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-lg">
+            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               Master the art of setting boundaries and protect your most valuable asset - your time.
             </p>
             <Button 
-              className="bg-book-red hover:bg-book-red/90 text-white px-6 py-2 rounded-md text-base"
+              className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
               onClick={() => window.open("#", "_blank")}
             >
               Order Now
-              <ArrowRight className="ml-1 h-4 w-4" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
-          <div>
+          <div className="animate-fade-in">
             <img
               src="/lovable-uploads/ad1ae17a-d49c-4ecc-ba3e-fba0fc677922.png"
               alt="The Good No Book Cover"
-              className="w-full max-w-md mx-auto transform rotate-6 hover:rotate-0 transition-transform duration-300"
+              className="w-full max-w-md mx-auto shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
       </section>
 
       {/* Book Description */}
-      <section className="py-24">
-        <div className="container max-w-3xl mx-auto px-4">
-          <div className="space-y-8 text-center">
-            <h2 className="text-3xl font-bold text-gray-900">
-              The problem with being known as a "go-to" person?<br />
-              Everyone goes to you.
+      <section className="bg-white py-24">
+        <div className="container max-w-4xl mx-auto px-4">
+          <div className="space-y-8 animate-fade-up">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+              The problem with being known as a "go-to" person? Everyone goes to you.
             </h2>
-            <div className="space-y-6 text-left text-gray-700 text-lg leading-relaxed">
+            <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
               <p>
-                You're the person people count on to deliver, solve, and manage the important stuff. But when the requests 
-                never stop, even the most capable and committed person hits a breaking point.
+                You're the person people count on to deliver, solve, and manage the important stuff. 
+                But when the requests never stop, even the most capable and committed person hits a breaking point.
               </p>
               <p>
                 If saying "no" feels risky and you fear letting people down or jeopardizing your 
                 hard-earned reputation, the cycle gets even more challenging to break.
               </p>
-              <p>
-                <span className="text-book-red font-medium">The Good No</span> is a practical guide to setting boundaries in a world that doesn't seem 
+              <p className="text-xl font-medium text-book-red">
+                <span className="italic">The Good No</span> is a practical guide to setting boundaries in a world that doesn't seem 
                 to understand the concept.
               </p>
               <p>
@@ -74,9 +73,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-gray-100">
+      <footer className="bg-gray-50 py-8">
         <div className="container max-w-6xl mx-auto px-4">
-          <div className="flex flex-col items-center space-y-3">
+          <div className="flex flex-col items-center space-y-4">
             <Link 
               to="/about" 
               className="text-gray-600 hover:text-book-red transition-colors"
@@ -89,8 +88,8 @@ const Index = () => {
             >
               contact@oomiyasa.com
             </a>
-            <div className="text-center text-gray-500 text-sm">
-              © 2025 Oomiyasa LLC. All rights reserved.
+            <div className="text-center text-gray-600 text-sm">
+              © {new Date().getFullYear()} Oomiyasa LLC. All rights reserved.
             </div>
           </div>
         </div>
