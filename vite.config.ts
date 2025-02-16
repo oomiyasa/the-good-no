@@ -9,9 +9,20 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     fs: {
-      strict: true
+      strict: false // Disable strict file serving
     },
-    middlewareMode: false
+    headers: {
+      // Ensure proper MIME types for JavaScript modules
+      "*.js": {
+        "Content-Type": "application/javascript"
+      },
+      "*.ts": {
+        "Content-Type": "application/javascript"
+      },
+      "*.tsx": {
+        "Content-Type": "application/javascript"
+      }
+    }
   },
   plugins: [
     react(),
@@ -23,4 +34,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        format: 'es'
+      }
+    }
+  }
 }));
