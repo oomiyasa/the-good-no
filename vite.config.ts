@@ -6,7 +6,16 @@ import type { Connect } from 'vite';
 import type { IncomingMessage, ServerResponse } from 'http';
 
 export default defineConfig(({ mode }) => ({
-  base: '/',
+  base: './',
+  build: {
+    outDir: 'docs',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        format: 'es'
+      }
+    }
+  },
   server: {
     host: "::",
     port: 8080,
@@ -32,13 +41,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  build: {
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        format: 'es'
-      }
-    }
   }
 }));
