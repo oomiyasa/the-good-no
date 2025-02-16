@@ -33,5 +33,10 @@ export default defineConfig(({ mode }) => ({
         format: 'es'
       }
     }
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'esnext'
+    }
   }
 }));
