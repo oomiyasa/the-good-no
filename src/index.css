@@ -43,8 +43,12 @@
   * {
     @apply border-border;
   }
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
   body {
-    @apply bg-background text-foreground font-['Poppins'];
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif !important;
   }
 }
 
