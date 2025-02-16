@@ -7,6 +7,7 @@ import type { Connect } from 'vite';
 import type { IncomingMessage, ServerResponse } from 'http';
 
 export default defineConfig(({ mode }) => ({
+  base: '/',
   server: {
     host: "::",
     port: 8080,
