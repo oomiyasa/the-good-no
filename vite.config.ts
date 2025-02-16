@@ -9,12 +9,17 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     fs: {
-      strict: false // Disable strict file serving
+      strict: false
     },
-    headers: {
-      'Cache-Control': 'no-store',
-      'Content-Type': 'application/javascript; charset=utf-8'
-    }
+    middlewares: [
+      (req, res, next) => {
+        // Set correct MIME type for JavaScript modules
+        if (req.url?.endsWith('.js') || req.url?.endsWith('.ts') || req.url?.endsWith('.tsx')) {
+          res.setHeader('Content-Type', 'application/javascript');
+        }
+        next();
+      }
+    ]
   },
   plugins: [
     react(),
