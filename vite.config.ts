@@ -6,19 +6,7 @@ import type { Connect } from 'vite';
 import type { IncomingMessage, ServerResponse } from 'http';
 
 export default defineConfig(({ mode }) => ({
-  base: './',
-  build: {
-    outDir: 'docs',
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        format: 'es',
-        assetFileNames: 'assets/[name].[ext]',
-        chunkFileNames: 'assets/[name].[hash].js',
-        entryFileNames: 'assets/[name].[hash].js'
-      }
-    }
-  },
+  base: '/',
   server: {
     host: "::",
     port: 8080,
@@ -44,5 +32,13 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        format: 'es'
+      }
+    }
   }
 }));
