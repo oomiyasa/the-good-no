@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import type { Connect } from 'vite';
 
 export default defineConfig(({ mode }) => ({
   server: {
@@ -12,13 +13,13 @@ export default defineConfig(({ mode }) => ({
       strict: false
     },
     middlewares: [
-      (req, res, next) => {
+      ((req: Connect.IncomingMessage, res: Connect.ServerResponse, next: Connect.NextFunction) => {
         // Set correct MIME type for JavaScript modules
         if (req.url?.endsWith('.js') || req.url?.endsWith('.ts') || req.url?.endsWith('.tsx')) {
-          res.setHeader('Content-Type', 'application/javascript');
+          res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
         }
         next();
-      }
+      }) as Connect.NextHandleFunction
     ]
   },
   plugins: [
