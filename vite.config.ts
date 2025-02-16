@@ -34,7 +34,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: 'docs', // Build output to docs folder for GitHub Pages
     sourcemap: true,
     rollupOptions: {
       output: {
