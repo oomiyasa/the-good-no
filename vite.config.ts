@@ -4,7 +4,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import type { Connect } from 'vite';
 import type { IncomingMessage, ServerResponse } from 'http';
-import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   base: '/',
@@ -28,10 +27,7 @@ export default defineConfig(({ mode }) => ({
       }) as Connect.NextHandleFunction
     ]
   },
-  plugins: [
-    react(),
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean),
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
