@@ -4,8 +4,9 @@ import path from "path";
 import type { IncomingMessage, ServerResponse } from "http"; // ✅ Fix missing imports
 import type { NextHandleFunction } from "connect"; // ✅ Fix missing import
 
-export default defineConfig(({ mode }) => ({
-    base: './', // ✅ Fixes Path for GitHub Pages
+export default defineConfig({
+    base: "./", // ✅ Fixes Path for GitHub Pages
+});
     server: {
         host: "::",
         port: 8080,
