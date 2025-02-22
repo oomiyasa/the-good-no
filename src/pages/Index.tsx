@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -82,12 +82,7 @@ const Index = () => {
             >
               About the Author
             </Link>
-            <a 
-              href="mailto:contact@oomiyasa.com"
-              className="text-gray-600 hover:text-book-red transition-colors"
-            >
-              contact@oomiyasa.com
-            </a>
+            <ContactForm />
             <div className="text-center text-gray-600 text-sm">
               © {new Date().getFullYear()} Oomiyasa LLC. All rights reserved.
             </div>
