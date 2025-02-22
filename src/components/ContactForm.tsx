@@ -17,7 +17,7 @@ export function ContactForm() {
     e.preventDefault();
     
     try {
-      await fetch("https://formspree.io/f/contact@oomiyasa.com", {
+      await fetch("https://formspree.io/f/xleqwwjb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
