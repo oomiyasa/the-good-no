@@ -3,6 +3,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import type { IncomingMessage, ServerResponse } from "http";
+import type { NextHandleFunction } from "connect";
 
 export default defineConfig(({ mode }) => ({
     base: "./",
