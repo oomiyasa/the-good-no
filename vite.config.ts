@@ -5,7 +5,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-    base: "./",
+    base: '', // Set empty base for proper asset paths on custom domain
     server: {
         host: "::",
         port: 8080,
