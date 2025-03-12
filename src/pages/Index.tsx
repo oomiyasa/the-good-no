@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -20,19 +19,13 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               Master the art of setting boundaries and protect your most valuable asset - your time.
             </p>
-            <a 
-              href="https://mybook.to/The-Good-No"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
+            <Button 
+              className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.open('https://mybook.to/The-Good-No', '_blank', 'noopener,noreferrer')}
             >
-              <Button 
-                className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
-              >
-                Order Now
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </a>
+              Order Now
+              <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </div>
           <div className="animate-fade-in">
             <img
