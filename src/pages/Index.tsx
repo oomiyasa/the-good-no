@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -21,7 +22,7 @@ const Index = () => {
             </p>
             <Button 
               className="group bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.open("https://a.co/d/87Yjk2a", "_blank")}
+              onClick={() => window.open("https://mybook.to/The-Good-No", "_blank")}
             >
               Order Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
