@@ -4,7 +4,8 @@ import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
-  const handleOrderNowClick = () => {
+  const handleOrderNowClick = (event) => {
+    event.preventDefault(); // Prevent the default click behavior
     window.open("https://mybook.to/The-Good-No", "_blank");
   };
 
