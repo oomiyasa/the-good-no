@@ -1,11 +1,14 @@
+
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  // Function to handle external navigation - using a more direct approach
   const handleOrderNowClick = () => {
-    window.open("https://mybook.to/The-Good-No", "_blank");
+    // Using location.href for a more direct navigation approach
+    window.location.href = "https://mybook.to/The-Good-No";
   };
 
   return (
