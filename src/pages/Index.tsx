@@ -1,14 +1,7 @@
-import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
-import { Button } from "@/components/ui/button";
 
 const Index = () => {
-  const handleOrderNowClick = (event) => {
-    event.preventDefault(); // Prevent the default click behavior
-    window.open("https://mybook.to/The-Good-No", "_blank");
-  };
-
   return (
     <div className="min-h-screen bg-texture">
       {/* Hero Section */}
@@ -24,13 +17,7 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               Master the art of setting boundaries and protect your most valuable asset - your time.
             </p>
-            <Button 
-              onClick={handleOrderNowClick}
-              className="bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
-            >
-              Order Now
-              <ExternalLink className="ml-2 h-5 w-5 inline align-text-bottom" />
-            </Button>
+            {/* Order Now button removed */}
           </div>
           <div className="animate-fade-in">
             <img
