@@ -1,8 +1,15 @@
+
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
+  // Function to handle external navigation
+  const handleOrderNowClick = (e) => {
+    e.preventDefault();
+    window.open("https://mybook.to/The-Good-No", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="min-h-screen bg-texture">
       {/* Hero Section */}
@@ -18,15 +25,13 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               Master the art of setting boundaries and protect your most valuable asset - your time.
             </p>
-            <a 
-              href="https://mybook.to/The-Good-No"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button 
+              onClick={handleOrderNowClick}
               className="inline-block bg-book-red hover:bg-book-red/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105 font-medium"
             >
               Order Now
               <ExternalLink className="ml-2 h-5 w-5 inline align-text-bottom" />
-            </a>
+            </button>
           </div>
           <div className="animate-fade-in">
             <img
